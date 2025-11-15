@@ -1,9 +1,8 @@
 package connect4;
 
 public class Main {
-
-	public static void main(String[] args) {
-		
-	}
-
+    public static void main(String[] args) {
+        Game game = new Game(new HumanPlayer(), new EasyBot());
+        game.start();
+    }
 }
