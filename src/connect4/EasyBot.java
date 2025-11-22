@@ -6,10 +6,8 @@ import java.util.Scanner;
 
 public class EasyBot implements Player{
 	int playerNumber = 2;
-    private Random rand = new Random();
-	public EasyBot() {
-		
-	}
+  private Random rand = new Random();
+	
 	@Override
 	public Move getMove(Board board) {
 		List <Integer> valid = board.getValidCols();
