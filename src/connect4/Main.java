@@ -25,5 +25,7 @@ public class Main {
 
         Game game = new Game(new HumanPlayer(), bot);
         game.start();
+
+        sc.close();
     }
 }

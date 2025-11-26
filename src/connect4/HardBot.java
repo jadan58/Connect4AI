@@ -6,7 +6,7 @@ public class HardBot implements Player {
 
     private static final int AI_PLAYER = 2;
     private static final int HUMAN_PLAYER = 1;
-    private static final int MAX_DEPTH = 5;// search depth
+    private static final int MAX_DEPTH = 5;
 
     @Override
     public Move getMove(Board board) {
@@ -145,7 +145,7 @@ public class HardBot implements Player {
         return score;
     }
 
-    /**
+    /*
      * Evaluate a 4-cell window.
      * - Reward AI 3-in-a-row with an empty spot.
      * - Small reward for 2-in-a-row.
@@ -171,7 +171,6 @@ public class HardBot implements Player {
             score += 2;
         }
 
-        // Human threatening patterns
         if (humanCount == 3 && emptyCount == 1) {
             score -= 4;
         } else if (humanCount == 4) {
